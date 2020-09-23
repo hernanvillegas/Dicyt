@@ -1,0 +1,51 @@
+{
+  "name": "investigation_project",
+  "plural": "investigations_projects",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "investigation_code": {
+      "type": "number",
+      "id": true
+    },
+    "research_name": {
+      "type": "string",
+      "required": true
+    },
+    "research_topic": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "investment_amount": {
+      "type": "number",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "ending_date": {
+      "type": "date",
+      "required": true
+    },
+    "state": {
+      "type": "boolean",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

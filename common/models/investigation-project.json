@@ -42,10 +42,31 @@
     "image": {
       "type": "string",
       "required": true
+    },
+    "number_activities": {
+      "type": "number",
+      "required": true
+    },
+    "percent_completion": {
+      "type": "number",
+      "default": 0
+    },
+    "interinstitutional_agreement": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "auxiliarProjects": {
+      "type": "hasMany",
+      "model": "auxiliar_project",
+      "foreignKey": "investigation_code",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

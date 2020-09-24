@@ -37,6 +37,30 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "auxiliars": {
+      "type": "hasMany",
+      "model": "auxiliar",
+      "foreignKey": "institute_code",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "investigators": {
+      "type": "hasMany",
+      "model": "investigator",
+      "foreignKey": "institute_code",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "idh-projects": {
+      "type": "hasMany",
+      "model": "idh-project",
+      "foreignKey": "institute_code",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

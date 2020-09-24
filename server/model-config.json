@@ -67,5 +67,9 @@
   "investigator": {
     "dataSource": "mysql",
     "public": true
+  },
+  "auxiliar_project": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

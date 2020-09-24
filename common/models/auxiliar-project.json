@@ -1,19 +1,14 @@
 {
-  "name": "responsable",
-  "plural": "responsables",
+  "name": "auxiliar_project",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "responsableCode": {
+    "proAux_code": {
       "type": "number",
       "id": true
-    },
-    "year": {
-      "type": "number",
-      "required": true
     }
   },
   "validations": [],
